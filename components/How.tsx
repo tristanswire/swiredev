@@ -42,7 +42,7 @@ export default function HowItWorks() {
               className="rounded-xl border border-brand-black/10 bg-white p-6 hover:border-brand-black/20 transition"
             >
 
-              <span className="h-7 w-7 mb-4 m-auto rounded-full border-brand-yellow bg-brand-yellow text-brand-black flex items-center justify-center text-[12px] font-semibold">
+              <span className="h-8 w-8 mb-4 m-auto rounded-full border-2 border-black bg-brand-yellow text-brand-black flex items-center justify-center text-[14px] font-semibold">
                 {i + 1}
               </span>
               <div className="flex justify-center items-center gap-3">

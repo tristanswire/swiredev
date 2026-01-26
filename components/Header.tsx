@@ -32,12 +32,12 @@ export default function MobileHeader() {
 
 
         {!hideNav && (
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-12">
             {navItems.map(({ label, target }, i) => (
               <a
                 key={i}
                 href={`#${target}`}
-                className="relative font-light text-md transition-all duration-300 font-sans text-brand-black pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-purple-dk after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
+                className="relative font-medium text-md transition-all duration-300 font-sans text-brand-black pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-purple-dk after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
               >
                 {label}
               </a>
@@ -50,7 +50,7 @@ export default function MobileHeader() {
           <Link
             href="https://cal.com/swiredev/introductory-call"
             target="_blank"
-            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
+            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:brightness-90 duration-350 transition border-2 border-black"
           >
             Book a Call
           </Link>
@@ -101,7 +101,7 @@ export default function MobileHeader() {
               <Link
                 href="https://cal.com/swiredev/introductory-call"
                 onClick={() => setIsOpen(false)}
-                className="mt-6 inline-block px-6 py-2 border-2 border-white text-white rounded-md hover:text-brand-white hover:bg-brand-purple-dk hover:border-brand-purple-dk transition"
+                className="border-2 border-black mt-6 inline-block px-6 py-2 bg-brand-yellow font-semibold text-black rounded-md hover:text-brand-white hover:bg-brand-purple-dk hover:border-brand-purple-dk transition"
               >
                 Book a Call
               </Link>

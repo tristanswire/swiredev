@@ -19,11 +19,11 @@ export default function Footer() {
           <Link
             href="https://cal.com/swiredev/introductory-call"
             target="_blank"
-            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
+            className="border-2 border-black hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:brightness-90 duration-350 transition"
           >
             Book a Call
           </Link>
-          <p className="mt-3 text-[14px] text-[#6b6b6b]">
+          <p className="mt-3 text-[12px] text-[#6b6b6b]">
             Not ready for a call?{" "}
             <a
               href="mailto:tristan@swiredev.com"

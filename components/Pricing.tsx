@@ -83,11 +83,11 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="rounded-[16px] border border-[#e5e5e5] bg-white px-10 py-12 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+              className="relative rounded-[16px] border border-[#e5e5e5] bg-white px-10 py-12 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
               {/* Popular tag */}
               {service.popular && (
-                <span className="inline-block self-start mb-5 px-3 py-1.5 text-[12px] uppercase font-bold tracking-wide rounded-md bg-[#faf9f6] border border-[#e5ddd1]">
+                <span className="absolute -top-5 -left-2 z-[2] px-3 py-1.5 text-[12px] uppercase font-bold tracking-wide rounded-md bg-[#FFEC51] border-2 border-black">
                   Most Popular
                 </span>
               )}
@@ -150,7 +150,7 @@ export default function Services() {
               <Link
                 href="https://cal.com/swiredev/introductory-call"
                 target="_blank"
-                className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition text-center"
+                className="border-2 border-black hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:brightness-90 duration-350 transition text-center"
               >
                 Book a Call
               </Link>

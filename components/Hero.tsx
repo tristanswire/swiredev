@@ -68,7 +68,7 @@ export default function HeroHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={primaryCtaClicked}
-                className="text-sm md:text-[1rem] inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full"
+                className="border-2 border-black text-sm md:text-[1rem] inline-flex justify-center items-center rounded-md bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:brightness-90 transition duration-300 w-full"
               >
                 Book a Call
               </a>
