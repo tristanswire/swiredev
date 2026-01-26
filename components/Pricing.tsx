@@ -56,7 +56,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-brand-white">
+    <section id="services" className="bg-brand-white border-b border-brand-black/10 mb-20">
       <div className="container mx-auto px-6 py-[70px] max-w-7xl">
         {/* Header */}
         <header className="text-center max-w-3xl mx-auto mb-12">
@@ -126,16 +126,16 @@ export default function Services() {
               <Link
                 href="https://cal.com/swiredev/introductory-call"
                 target="_blank"
-                className="block text-center w-full px-8 py-3.5 rounded-lg bg-[#FFEC51] text-[#1a1a1a] text-[16px] font-semibold hover:bg-[#FFE01A] transition-all duration-200 ease-out"
+                className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition text-center"
               >
-                Schedule a Call
+                Book a Call
               </Link>
             </div>
           ))}
         </div>
 
         {/* Bottom text */}
-        <p className="mt-10 text-center text-[16px] text-[#6b6b6b]">
+        <p className="mt-10 text-center text-[14px] text-[#6b6b6b]">
           Not sure which package fits?{" "}
           <Link
             href="https://cal.com/swiredev/introductory-call"

@@ -52,14 +52,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="bg-brand-white">
+    <section id="faq" className="bg-brand-white border-b border-brand-black/10">
       <div className="container mx-auto px-6 pt-6 py-16 lg:py-20 lg:pt-0 max-w-6xl">
         {/* Header */}
         <header className="text-center max-w-2xl mx-auto mb-10">
-          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-1">
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
             FAQ
           </span>
-          <h2 className="font-sans font-light text-3xl md:text-4xl text-brand-black">
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
             Frequently asked questions
           </h2>
           <p className="mt-2 text-brand-black/70">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -6,20 +7,23 @@ export default function Footer() {
       {/* Final CTA Section */}
       <section className="bg-brand-white">
         <div className="container mx-auto px-10 py-20 max-w-[800px] text-center">
-          <h2 className="font-sans font-bold text-[36px] text-[#1a1a1a] mb-4">
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
+            Let's Go
+          </span>
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
             Ready to Get Started?
           </h2>
-          <p className="text-[18px] text-[#6b6b6b] leading-[1.6] mb-8">
+          <p className="mt-3 text-brand-black/70 mb-6">
             Book a 30-minute discovery call and let&apos;s talk about your project.
           </p>
           <Link
             href="https://cal.com/swiredev/introductory-call"
             target="_blank"
-            className="inline-block px-12 py-4 rounded-lg bg-[#FFEC51] text-[#1a1a1a] text-[18px] font-semibold hover:bg-[#FFE01A] transition-all duration-200 ease-out"
+            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
           >
-            Schedule Your Call
+            Book a Call
           </Link>
-          <p className="mt-6 text-[16px] text-[#6b6b6b]">
+          <p className="mt-3 text-[14px] text-[#6b6b6b]">
             Not ready for a call?{" "}
             <a
               href="mailto:tristan@swiredev.com"
@@ -33,55 +37,54 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#f5f3ed] border-t border-[#e5e5e5]">
-        <div className="container mx-auto px-10 py-15 text-center">
-          {/* Row 1 - Branding */}
-          <div className="mb-6">
-            <p className="text-[20px] font-bold text-[#1a1a1a]">Swire Dev</p>
-            <p className="text-[14px] text-[#6b6b6b] mt-1">
-              WordPress development and technical consulting.
-            </p>
-          </div>
-
-          {/* Row 2 - Social Links */}
-          <div className="mb-6 text-[14px] text-[#6b6b6b]">
+      <footer className="bg-brand-white text-brand-black border-t border-brand-black/10">
+        <div className="container mx-auto px-2 py-4 max-w-6xl text-center">
+          {/* Social / contact */}
+          <div className="mb-3 flex justify-center flex-wrap items-center gap-4 text-sm">
             <a
               href="mailto:tristan@swiredev.com"
-              className="hover:text-[#1a1a1a] transition"
+              aria-label="Email Swire Dev"
+              className="inline-flex items-center gap-2 hover:text-brand-black/60 transition-colors"
             >
-              Email
+              <Mail size={20} />
+              <span className="sr-only">Email</span>
             </a>
-            <span className="mx-2">|</span>
             <a
-              href="https://instagram.com/tristanswire"
+              href="https://www.instagram.com/swiredev"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#1a1a1a] transition"
+              aria-label="Swire Dev on Instagram"
+              className="inline-flex items-center gap-2 hover:text-brand-black/60 transition-colors"
             >
-              Instagram
+              <Instagram size={20} />
+              <span className="sr-only">Instagram</span>
             </a>
           </div>
 
-          {/* Row 3 - Legal Links */}
-          <div className="mb-4 text-[14px] text-[#6b6b6b]">
+          {/* Legal */}
+          <div className="flex justify-center flex-wrap gap-2 text-xs items-center mb-1">
             <Link
+              className="relative pb-1 hover:text-brand-black/70 transition-colors
+                after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-brand-black/30
+                after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
               href="/terms-of-service"
-              className="hover:text-[#1a1a1a] transition"
+              target="_blank"
             >
               Terms of Service
             </Link>
-            <span className="mx-2">|</span>
             <Link
+              className="relative pb-1 hover:text-brand-black/70 transition-colors
+                after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-brand-black/30
+                after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
               href="/privacy-policy"
-              className="hover:text-[#1a1a1a] transition"
+              target="_blank"
             >
               Privacy Policy
             </Link>
           </div>
-
-          {/* Row 4 - Copyright */}
-          <p className="text-[12px] text-[#6b6b6b]">
-            © 2025 Swire Dev. All rights reserved.
+          {/* Copyright */}
+          <p className="text-[11px] text-brand-black/70">
+            © {new Date().getFullYear()} <span className="font-semibold">Swire Dev</span>. All rights reserved.
           </p>
         </div>
       </footer>
