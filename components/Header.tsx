@@ -11,10 +11,9 @@ export default function MobileHeader() {
   const hideNav = pathname === "/terms-of-service" || pathname === "/privacy-policy";
 
   const navItems = [
-    { label: "How it works", target: "how" },
-    { label: "Pricing", target: "pricing" },
-    { label: "Add-ons", target: "addons" },
-    { label: "Membership", target: "benefits" },
+    { label: "About", target: "about" },
+    { label: "Services", target: "services" },
+    { label: "How It Works", target: "how" },
     { label: "FAQ", target: "faq" },
   ];
 
