@@ -57,18 +57,17 @@ export default function Services() {
 
   return (
     <section id="services" className="bg-brand-white">
-      <div className="container mx-auto px-6 py-[100px] max-w-7xl">
+      <div className="container mx-auto px-6 py-[70px] max-w-7xl">
         {/* Header */}
         <header className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block text-[12px] tracking-[1px] uppercase text-[#6b6b6b] mb-2">
-            SERVICES
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
+            pricing
           </span>
-          <h2 className="font-sans font-bold text-[32px] md:text-[48px] text-[#1a1a1a]">
-            Services
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
+            Pricing
           </h2>
-          <p className="mt-3 text-[20px] text-[#6b6b6b] leading-[1.6]">
-            Choose what fits your project. All work is WordPress-focused,
-            mobile-responsive, and delivered on time.
+          <p className="mt-3 text-brand-black/70">
+            All work is WordPress-focused, responsive and delivered on time.
           </p>
         </header>
 
@@ -87,7 +86,7 @@ export default function Services() {
               )}
 
               {/* Service Name */}
-              <h3 className="text-[28px] font-bold text-[#1a1a1a]">
+              <h3 className="text-[28px] font-light text-[#1a1a1a]">
                 {service.name}
               </h3>
 

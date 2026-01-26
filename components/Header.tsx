@@ -27,7 +27,7 @@ export default function MobileHeader() {
             after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/4 after:bg-brand-purple-dk
             after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
         >
-          Swire Dev
+          SwireDev
         </Link>
 
 
@@ -77,7 +77,7 @@ export default function MobileHeader() {
             className="fixed inset-0 bg-brand-white z-50 text-white flex flex-col"
           >
             <div className="flex justify-between items-center justify-center pb-0 pt-12">
-              <span className="text-brand-black text-3xl font-semibold">Swire Dev</span>
+              <span className="text-brand-black text-3xl font-semibold">SwireDev</span>
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-2xl text-brand-black cursor-pointer position absolute right-[1rem] top-[1rem]"
