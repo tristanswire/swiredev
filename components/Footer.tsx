@@ -8,7 +8,7 @@ export default function Footer() {
       <section className="bg-brand-white">
         <div className="container mx-auto px-10 py-20 max-w-[800px] text-center">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
-            Let's Go
+            Let&apos;s Go
           </span>
           <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
             Ready to Get Started?
