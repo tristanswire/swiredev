@@ -30,7 +30,7 @@ export default function HeroHeader() {
   ];
 
   return (
-    <section className="relative bg-brand-white text-brand-black px-6 py-12 md:py-18 lg:py-24 border-b border-brand-black/10">
+    <section className="relative bg-brand-white text-brand-black px-6 py-18 md:py-24 lg:py-36 border-b border-brand-black/10">
       <div className="container mx-auto max-w-7xl relative">
         <div className="grid grid-cols-1 text-center max-w-2xl m-auto lg:text-left lg:max-w-none lg:grid-cols-12 lg:gap-10 items-center">
           {/* Left: Copy + CTAs */}
@@ -113,8 +113,14 @@ export default function HeroHeader() {
             transition={{ delay: 0.2, duration: 0.45 }}
             className="md:col-span-5"
           >
-            <div className="hidden lg:block rounded-2xl h-150 overflow-hidden grayscale-25"> 
-              <img src="https://images.unsplash.com/photo-1636138390674-c9f30acc38b5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <div className="hidden lg:block relative rounded-2xl overflow-hidden">
+              <img
+                src="http://tristanswire.com/swire-dev-hero.png"
+                alt=""
+                className="w-full h-full object-cover grayscale-15"
+              />
+
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#FFEC51]/25 to-[#FFEC51]/10 " />
             </div>
           </motion.aside>
         </div>
