@@ -6,44 +6,48 @@ import Link from "next/link";
 export default function FAQ() {
   const faqs = [
     {
-      q: "What exactly do I get each sprint?",
-      a: "Two active tasks worked in a 2-week sprint, with unlimited items in your backlog. We pull the next highest-priority items into “active” as soon as one finishes.",
+      q: "Do I have to commit to a subscription?",
+      a: "No. You can start with a one-time landing page project ($3,000) or monthly maintenance ($500/month). Subscriptions are only for clients with ongoing development needs.",
     },
     {
-      q: "What counts as a task?",
-      a: "A task is a clearly defined outcome like “build pricing page,” “implement header nav,” or “fix CLS on blog templates.” Oversized items (8+ points) get split so we keep momentum.",
-    },
-    {
-      q: "Do you work in JavaScript frameworks?",
-      a: "Not in this membership. I focus on WordPress, Shopify theme work, HTML/CSS, and JS. React/Vue or heavy API builds are quoted separately.",
+      q: "Can I start with just one project?",
+      a: "Absolutely. The Lead Gen Landing Page package ($3,000) is perfect for trying out how we work together before committing to ongoing work.",
     },
     {
       q: "How soon can we start?",
-      a: "Onboarding starts within 7 days of sign-up. Your first sprint kicks off the next available Monday after onboarding wraps (usually the following Monday).",
+      a: "Most projects start within 7 days of our discovery call. Subscriptions kick off the following Monday after onboarding.",
+    },
+    {
+      q: 'What counts as a "task" in the subscription?',
+      a: 'A task is a clearly defined outcome like "build a pricing page," "implement header navigation," or "fix mobile responsiveness on blog." Larger projects get broken into smaller tasks for better tracking.',
+    },
+    {
+      q: "Do you work in JavaScript frameworks?",
+      a: "I focus on WordPress development with Elementor, Gravity Forms, and standard HTML/CSS/JS. React/Vue or heavy JavaScript framework projects would need to be quoted separately.",
     },
     {
       q: "How do we communicate?",
-      a: "Primarily async. You’ll get clear email updates during the sprint and a weekly recap. Need faster back-and-forth? Add the “Slack Bridge + Loom” add-on.",
+      a: "Primarily via email with regular async updates. For subscription clients, I can add Slack for real-time communication if needed.",
     },
     {
-      q: "What if we need something live ASAP?",
-      a: "Use a Rush Ticket: submit a ≤2-point issue before noon (CST) and it’s delivered next business day. See Add-ons for pricing and limits.",
+      q: "What if I need something done urgently?",
+      a: "For one-off urgent fixes, we can discuss rush pricing on our call. For subscription clients, I prioritize based on sprint planning, but critical issues get bumped to the top.",
     },
     {
-      q: "Can we pause if we don’t have work for a sprint?",
-      a: "Yes. You can pause once per quarter for one sprint. Your remaining time becomes a credit you can use later (credits expire after 90 days).",
+      q: "Can I pause my subscription?",
+      a: "Yes. Subscriptions are month-to-month, so you can cancel anytime. If you need to pause temporarily, we can discuss that on a case-by-case basis.",
     },
     {
       q: "Who owns the code and IP?",
-      a: "You do. Everything I create under the membership is work-for-hire and transferred to you upon payment.",
+      a: "You do. Everything I create is work-for-hire and transferred to you upon payment.",
     },
     {
       q: "Are there refunds?",
-      a: "No refunds for past sprints, but you can cancel anytime before the next sprint begins.",
+      a: "No refunds on completed work, but you can cancel subscriptions anytime before the next billing cycle.",
     },
     {
-      q: "Do you offer performance/security hardening?",
-      a: "Yes via add-ons: CWV Pass (speed tune), Plugin Safety Pack, and Uptime & Backups. These layer neatly on top of the sprint model.",
+      q: "What if my project doesn't fit these packages?",
+      a: "Let's talk. I can quote custom projects that fall outside these standard offerings—just book a call and we'll figure out what works best.",
     },
   ];
 
@@ -67,7 +71,7 @@ export default function FAQ() {
             >
               Book a Call
             </Link>
-            
+
           </p>
         </header>
 
@@ -94,25 +98,6 @@ export default function FAQ() {
               </div>
             </details>
           ))}
-        </div>
-
-        {/* Footer links */}
-        <div className="text-center mt-10 text-sm text-brand-black/70">
-          See{" "}
-          <a
-            href="#addons"
-            className="underline underline-offset-2 font-semibold hover:no-underline"
-          >
-            Add-ons
-          </a>{" "}
-          and{" "}
-          <a
-            href="#pricing"
-            className="underline underline-offset-2 font-semibold hover:no-underline"
-          >
-            Pricing
-          </a>{" "}
-          for more details.
         </div>
       </div>
     </section>

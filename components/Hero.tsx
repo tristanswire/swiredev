@@ -35,18 +35,6 @@ export default function HeroHeader() {
         <div className="grid grid-cols-1 text-center max-w-2xl m-auto lg:text-left lg:max-w-none lg:grid-cols-12 lg:gap-10 items-center">
           {/* Left: Copy + CTAs */}
           <div className="md:col-span-7">
-            {/* Eyebrow/Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="inline-flex items-center gap-2 rounded-full border border-brand-black/30 px-3 py-1 text-[0.6rem] tracking-wide uppercase text-brand-black/70"
-            >
-              Dev Partner
-              <span className="h-1 w-1 rounded-full bg-brand-black/50" />
-              On Demand
-            </motion.div>
-
             {/* Headline (thin) */}
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
@@ -54,7 +42,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.1, duration: 0.45 }}
               className="pb-3 font-sans font-light tracking-tight text-4xl md:text-5xl lg:text-6xl leading-tight lg:w-[90%]"
             >
-              You design. We code.
+              WordPress Development That Actually Gets Done.
             </motion.h1>
 
             {/* Subhead */}
@@ -64,7 +52,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="pb-6 max-w-2xl md:text-lg text-brand-black/70 font-light"
             >
-              Built for designers, marketers, and agencies who need high-quality websites—without hiring, managing, or micromanaging developers. Get pixel-perfect results every 2 weeks—done right the first time.
+              WordPress development and technical consulting for designers, agencies, and businesses who need reliable help without dealing with flaky contractors. Choose subscription development for ongoing projects, landing page builds, or site maintenance—whatever fits your needs.
             </motion.p>
 
             {/* CTAs */}
@@ -84,11 +72,11 @@ export default function HeroHeader() {
                 Book a Call
               </a>
               <Link
-                href="#pricing"
+                href="#services"
                 onClick={secondaryCtaClicked}
                 className="text-sm md:text-[1rem] inline-flex justify-center items-center rounded-md border-2 border-brand-black bg-transparent text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-black hover:text-brand-white transition duration-300 w-full"
               >
-                See pricing
+                See Services
               </Link>
             </motion.div>
 
