@@ -15,7 +15,7 @@ export default function Footer() {
           <Link
             href="https://cal.com/swiredev/introductory-call"
             target="_blank"
-            className="inline-block px-12 py-4 rounded-md bg-[#ffd966] text-[#1a1a1a] text-[18px] font-bold hover:bg-[#ffcd33] transition duration-300"
+            className="inline-block px-12 py-4 rounded-lg bg-[#FFEC51] text-[#1a1a1a] text-[18px] font-semibold hover:bg-[#FFE01A] transition-all duration-200 ease-out"
           >
             Schedule Your Call
           </Link>
