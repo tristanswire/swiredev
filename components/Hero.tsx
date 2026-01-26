@@ -42,7 +42,8 @@ export default function HeroHeader() {
               transition={{ delay: 0.1, duration: 0.45 }}
               className="pb-3 font-sans font-light tracking-tight text-4xl md:text-5xl lg:text-6xl leading-tight lg:w-[90%]"
             >
-              WordPress Development That Actually Gets Done.
+              Reliable Development.<br />
+              No surprises.
             </motion.h1>
 
             {/* Subhead */}
@@ -52,7 +53,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="pb-6 max-w-2xl md:text-lg text-brand-black/70 font-light"
             >
-              WordPress development and technical consulting for designers, agencies, and businesses who need reliable help without dealing with flaky contractors. Choose subscription development for ongoing projects, landing page builds, or site maintenance—whatever fits your needs.
+              WordPress development and technical consulting for designers, agencies, and businesses who want reliable expertise -- without the headache of onboarding.
             </motion.p>
 
             {/* CTAs */}

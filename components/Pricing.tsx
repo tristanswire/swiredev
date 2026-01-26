@@ -56,19 +56,18 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-brand-white">
-      <div className="container mx-auto px-6 py-[100px] max-w-7xl">
+    <section id="services" className="bg-brand-white border-b border-brand-black/10 mb-20">
+      <div className="container mx-auto px-6 py-[70px] max-w-7xl">
         {/* Header */}
         <header className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block text-[12px] tracking-[1px] uppercase text-[#6b6b6b] mb-2">
-            SERVICES
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
+            pricing
           </span>
-          <h2 className="font-sans font-bold text-[32px] md:text-[48px] text-[#1a1a1a]">
-            Services
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
+            Pricing
           </h2>
-          <p className="mt-3 text-[20px] text-[#6b6b6b] leading-[1.6]">
-            Choose what fits your project. All work is WordPress-focused,
-            mobile-responsive, and delivered on time.
+          <p className="mt-3 text-brand-black/70">
+            All work is WordPress-focused, responsive and delivered on time.
           </p>
         </header>
 
@@ -77,7 +76,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="rounded-2xl border border-[#e5e5e5] bg-white px-10 py-12 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+              className="rounded-[16px] border border-[#e5e5e5] bg-white px-10 py-12 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
               {/* Popular tag */}
               {service.popular && (
@@ -97,7 +96,7 @@ export default function Services() {
               </p>
 
               {/* Description */}
-              <p className="text-[16px] text-[#6b6b6b] leading-[1.6] mb-7">
+              <p className="text-[16px] font-normal text-[#6b6b6b] leading-[1.6] mb-7">
                 {service.description}
               </p>
 
@@ -127,16 +126,16 @@ export default function Services() {
               <Link
                 href="https://cal.com/swiredev/introductory-call"
                 target="_blank"
-                className="block text-center w-full px-8 py-3.5 rounded-lg bg-[#FFEC51] text-[#1a1a1a] text-[16px] font-semibold hover:bg-[#FFE01A] transition-all duration-200"
+                className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition text-center"
               >
-                Schedule a Call
+                Book a Call
               </Link>
             </div>
           ))}
         </div>
 
         {/* Bottom text */}
-        <p className="mt-10 text-center text-[16px] text-[#6b6b6b]">
+        <p className="mt-10 text-center text-[14px] text-[#6b6b6b]">
           Not sure which package fits?{" "}
           <Link
             href="https://cal.com/swiredev/introductory-call"

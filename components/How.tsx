@@ -19,7 +19,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how" className="bg-brand-white">
+    <section id="how" className="bg-brand-white border-b border-brand-black/10">
       <div className="container mx-auto px-6 py-12 lg:py-20">
         {/* Section Header (matches hero vibe: clean, light-weight type) */}
         <header className="text-center max-w-3xl mx-auto">
