@@ -19,7 +19,7 @@ export default function FAQ() {
     },
     {
       q: 'What counts as a "task" in the subscription?',
-      a: 'A task is a clearly defined outcome like "build a pricing page," "implement header navigation," or "fix mobile responsiveness on blog." Larger projects get broken into smaller tasks for better tracking.',
+      a: 'A clearly defined outcome like "build a pricing page" or "fix responsive issues" Larger efforts get broken into smaller tasks.',
     },
     {
       q: "Do you work in JavaScript frameworks?",

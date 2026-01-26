@@ -8,7 +8,7 @@ export default function Services() {
       priceAmount: "$500",
       pricePeriod: "/month",
       description:
-        "Keep your WordPress site secure, updated, and running smoothly. Includes monthly updates, backups, security monitoring, and 2 hours of support for small fixes or tweaks.",
+        "Maintenance includes monthly updates, backups, security monitoring, and 2 hours of support for small fixes or tweaks.",
       includes: [
         "Monthly WordPress core and plugin updates",
         "Automated daily backups",
@@ -23,10 +23,10 @@ export default function Services() {
       name: "Lead Gen Landing Page",
       subheading: "One-time project",
       priceAmount: "$3,000",
-      pricePeriod: "",
+      pricePeriod: "/one-time",
       popular: true,
       description:
-        "High-converting landing page with multi-step conditional forms and smart logic to deliver the right content based on user answers. Perfect for businesses capturing leads with personalized experiences.",
+        "Custom landing page with multi-step conditional forms that deliver personalized content based on user responses.",
       includes: [
         "Custom landing page design in Elementor",
         "Multi-step conditional form (Gravity Forms)",
@@ -39,13 +39,12 @@ export default function Services() {
         "Businesses running lead gen campaigns, product launches, or personalized customer experiences.",
     },
     {
-      name: "Development Subscription",
+      name: "Dev Subscription",
       subheading: "For consistent development needs",
-      pricePrefix: "Starting at",
-      priceAmount: "$8,000",
+      priceAmount: "$6,000",
       pricePeriod: "/month",
       description:
-        "Ongoing WordPress development for agencies and businesses with consistent needs. 40 hours per month delivered in structured 2-week sprints. Flexible scope, predictable pricing, priority support.",
+        "40 hours per month in 2-week sprints. Flexible scope, predictable pricing, priority support for agencies and businesses.",
       includes: [
         "40 hours of development per month",
         "Structured 2-week sprint cycles",
@@ -58,13 +57,13 @@ export default function Services() {
         "Priority support with 24-hour response time",
       ],
       perfectFor:
-        "Agencies with ongoing client work, businesses scaling their WordPress sites, or teams who need a reliable dev partner on demand.",
+        "Agencies with ongoing client work or teams who need a reliable dev partner on demand.",
     },
   ];
 
   return (
     <section id="services" className="bg-brand-white border-b border-brand-black/10 mb-20">
-      <div className="container mx-auto px-6 py-[70px] max-w-7xl">
+      <div className="container mx-auto px-6 py-[70px] max-w-8xl">
         {/* Header */}
         <header className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
@@ -93,7 +92,7 @@ export default function Services() {
               )}
 
               {/* Service Name */}
-              <h3 className="text-[24px] font-semibold text-[#1a1a1a] mb-2">
+              <h3 className="text-[24px] font-semibold text-[#1a1a1a] mb-0">
                 {service.name}
               </h3>
 
@@ -104,45 +103,44 @@ export default function Services() {
 
               {/* Price - Hero Element */}
               <div className="mb-7">
-                {service.pricePrefix && (
-                  <span className="text-[20px] font-normal text-[#6b6b6b] mr-1">
-                    {service.pricePrefix}
-                  </span>
-                )}
-                <span className="text-[52px] font-bold text-[#1a1a1a] leading-none">
+                <span className="text-[52px] font-bold text-[#1a1a1a] leading-none tracking-tighter">
                   {service.priceAmount}
                 </span>
                 {service.pricePeriod && (
-                  <span className="text-[20px] font-normal text-[#6b6b6b] ml-1">
+                  <span className="text-[14px] font-normal text-[#6b6b6b]">
                     {service.pricePeriod}
                   </span>
                 )}
               </div>
 
               {/* Description */}
-              <p className="text-[16px] font-normal text-[#6b6b6b] leading-[1.6] mb-7">
+              <p className="text-[16px] font-normal text-[#1a1a1a] leading-[1.6] mb-8">
                 {service.description}
               </p>
+
+              <hr className="mb-8" />
 
               {/* What's Included */}
               <p className="text-[14px] font-semibold text-[#1a1a1a] uppercase tracking-[0.5px] mb-4">
                 What&apos;s Included:
               </p>
-              <ul className="space-y-2 mb-6 flex-grow">
+              <ul className="space-y-2 mb-8 flex-grow">
                 {service.includes.map((item, j) => (
                   <li
                     key={j}
-                    className="flex items-start gap-2 text-[15px] text-[#6b6b6b] leading-[1.8]"
+                    className="flex items-start gap-2 text-[15px] text-[#1a1a1a] leading-[1.8]"
                   >
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#6b6b6b] flex-shrink-0" />
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#1a1a1a] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
 
+              <hr className="mb-8" />
+
               {/* Perfect for */}
-              <p className="text-[14px] italic text-[#6b6b6b] mb-7">
-                <span className="font-semibold not-italic">Perfect for: </span>
+              <p className="text-[14px] text-[#1a1a1a] mb-7">
+                <span className="font-semibold text-[#1a1a1a]">Perfect for: </span>
                 {service.perfectFor}
               </p>
 
