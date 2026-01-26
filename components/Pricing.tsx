@@ -77,48 +77,48 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="rounded-xl border border-[#e5e5e5] bg-white p-10 flex flex-col"
+              className="rounded-2xl border border-[#e5e5e5] bg-white px-10 py-12 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
               {/* Popular tag */}
               {service.popular && (
-                <span className="inline-block self-start mb-4 px-3 py-1.5 text-[12px] uppercase font-bold tracking-wide rounded-md bg-[#faf9f6] border border-[#e5ddd1]">
+                <span className="inline-block self-start mb-5 px-3 py-1.5 text-[12px] uppercase font-bold tracking-wide rounded-md bg-[#faf9f6] border border-[#e5ddd1]">
                   Most Popular
                 </span>
               )}
 
               {/* Service Name */}
-              <h3 className="text-[28px] font-bold text-[#1a1a1a]">
+              <h3 className="text-[28px] font-semibold text-[#1a1a1a] mb-3">
                 {service.name}
               </h3>
 
               {/* Price */}
-              <p className="text-[36px] font-extrabold text-[#1a1a1a] mb-4">
+              <p className="text-[32px] font-semibold text-[#1a1a1a] mb-5">
                 {service.price}
               </p>
 
               {/* Description */}
-              <p className="text-[16px] text-[#6b6b6b] leading-[1.6] mb-6">
+              <p className="text-[16px] text-[#6b6b6b] leading-[1.6] mb-7">
                 {service.description}
               </p>
 
               {/* What's Included */}
-              <p className="text-[14px] font-semibold text-[#1a1a1a] mb-3">
+              <p className="text-[14px] font-semibold text-[#1a1a1a] uppercase tracking-[0.5px] mb-4">
                 What&apos;s Included:
               </p>
               <ul className="space-y-2 mb-6 flex-grow">
                 {service.includes.map((item, j) => (
                   <li
                     key={j}
-                    className="flex items-start gap-2 text-[14px] text-[#6b6b6b]"
+                    className="flex items-start gap-2 text-[15px] text-[#6b6b6b] leading-[1.8]"
                   >
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#6b6b6b] flex-shrink-0" />
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#6b6b6b] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
 
               {/* Perfect for */}
-              <p className="text-[14px] italic text-[#6b6b6b] mb-6">
+              <p className="text-[14px] italic text-[#6b6b6b] mb-7">
                 <span className="font-semibold not-italic">Perfect for: </span>
                 {service.perfectFor}
               </p>
@@ -127,7 +127,7 @@ export default function Services() {
               <Link
                 href="https://cal.com/swiredev/introductory-call"
                 target="_blank"
-                className="block text-center w-full px-8 py-3.5 rounded-md bg-[#ffd966] text-[#1a1a1a] text-[16px] font-bold hover:bg-[#ffcd33] transition duration-300"
+                className="block text-center w-full px-8 py-3.5 rounded-lg bg-[#FFEC51] text-[#1a1a1a] text-[16px] font-semibold hover:bg-[#FFE01A] transition-all duration-200"
               >
                 Schedule a Call
               </Link>
