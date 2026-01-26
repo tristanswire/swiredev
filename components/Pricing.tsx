@@ -4,7 +4,9 @@ export default function Services() {
   const services = [
     {
       name: "Site Maintenance",
-      price: "$500/month",
+      subheading: "For ongoing site upkeep",
+      priceAmount: "$500",
+      pricePeriod: "/month",
       description:
         "Keep your WordPress site secure, updated, and running smoothly. Includes monthly updates, backups, security monitoring, and 2 hours of support for small fixes or tweaks.",
       includes: [
@@ -19,7 +21,9 @@ export default function Services() {
     },
     {
       name: "Lead Gen Landing Page",
-      price: "$3,000",
+      subheading: "One-time project",
+      priceAmount: "$3,000",
+      pricePeriod: "",
       popular: true,
       description:
         "High-converting landing page with multi-step conditional forms and smart logic to deliver the right content based on user answers. Perfect for businesses capturing leads with personalized experiences.",
@@ -36,7 +40,10 @@ export default function Services() {
     },
     {
       name: "Development Subscription",
-      price: "Starting at $8,000/month",
+      subheading: "For consistent development needs",
+      pricePrefix: "Starting at",
+      priceAmount: "$8,000",
+      pricePeriod: "/month",
       description:
         "Ongoing WordPress development for agencies and businesses with consistent needs. 40 hours per month delivered in structured 2-week sprints. Flexible scope, predictable pricing, priority support.",
       includes: [
@@ -86,14 +93,31 @@ export default function Services() {
               )}
 
               {/* Service Name */}
-              <h3 className="text-[28px] font-semibold text-[#1a1a1a] mb-3">
+              <h3 className="text-[24px] font-semibold text-[#1a1a1a] mb-2">
                 {service.name}
               </h3>
 
-              {/* Price */}
-              <p className="text-[32px] font-semibold text-[#1a1a1a] mb-5">
-                {service.price}
+              {/* Subheading */}
+              <p className="text-[14px] font-normal text-[#6b6b6b] mb-6">
+                {service.subheading}
               </p>
+
+              {/* Price - Hero Element */}
+              <div className="mb-7">
+                {service.pricePrefix && (
+                  <span className="text-[20px] font-normal text-[#6b6b6b] mr-1">
+                    {service.pricePrefix}
+                  </span>
+                )}
+                <span className="text-[52px] font-bold text-[#1a1a1a] leading-none">
+                  {service.priceAmount}
+                </span>
+                {service.pricePeriod && (
+                  <span className="text-[20px] font-normal text-[#6b6b6b] ml-1">
+                    {service.pricePeriod}
+                  </span>
+                )}
+              </div>
 
               {/* Description */}
               <p className="text-[16px] font-normal text-[#6b6b6b] leading-[1.6] mb-7">
