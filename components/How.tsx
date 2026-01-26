@@ -2,19 +2,19 @@
 export default function HowItWorks() {
   const steps = [
     {
-      title: "Subscribe",
+      title: "Schedule a Call",
       body:
-        "No calls. No contracts. Just choose your plan, and you're officially onboarded.",
+        "We discuss your project, goals, and timeline to make sure we're a good fit.",
     },
     {
-      title: "Sync",
+      title: "Choose Your Service",
       body:
-        "Drop in your backlog. We'll prioritize, sync asynchronously, and execute in reliable 2‑week sprints.",
+        "Pick the package that fits—maintenance, a landing page build, or ongoing development.",
     },
     {
-      title: "Ship",
+      title: "Get Started",
       body:
-        "Receive tested, production-ready code—delivered on time, every time.",
+        "Work begins within 7 days. You'll get regular updates and production-ready code on schedule.",
     },
   ];
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             Simple Steps. Serious Output.
           </h2>
           <p className="mt-3 text-brand-black/70">
-            From sign-up to shipped code—in just days. Here&apos;s how we make dev magic happen.
+            From first call to final delivery—here&apos;s how we work together.
           </p>
         </header>
 
@@ -57,7 +57,7 @@ export default function HowItWorks() {
 
         {/* Tiny reassurance line (optional, keeps the minimal/clean feel) */}
         <p className="mt-8 text-center text-sm text-brand-black/55">
-          Month-to-month. Start in 5-7 days. Pause anytime.
+          Month-to-month subscriptions. One-time projects welcome. No long-term contracts.
         </p>
       </div>
     </section>
