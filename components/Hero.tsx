@@ -117,7 +117,7 @@ export default function HeroHeader() {
               <img
                 src="http://tristanswire.com/swire-dev-hero.png"
                 alt=""
-                className="w-full h-full object-cover grayscale-15"
+                className="w-full h-full object-cover"
               />
             </div>
           </motion.aside>
