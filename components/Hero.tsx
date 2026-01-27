@@ -119,8 +119,6 @@ export default function HeroHeader() {
                 alt=""
                 className="w-full h-full object-cover grayscale-15"
               />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#FFEC51]/25 to-[#FFEC51]/10 " />
             </div>
           </motion.aside>
         </div>
